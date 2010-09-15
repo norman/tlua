@@ -1,8 +1,8 @@
 # Tlua
 
-Tlua is a simple task runner for Lua that simplifies running and reusing small
-bits of useful code. It lets you very easily build a command-line application
-for running scripts in a project.
+Tlua is a task runner for Lua that simplifies running and reusing small bits of
+useful code. It lets you very easily build a command-line application for
+running scripts in a project.
 
 It is in some ways conceptually similar to [Rake](http://rake.rubyforge.org/),
 but is oriented exclusively towards task running rather replacing Makefiles,
@@ -73,8 +73,8 @@ By adding tasks to files in your ~/.tlua directory, you can save useful code
 snippets from the Lua Users Wiki. This makes tlua sort of like Luarocks, but
 for functions rather than applications:
 
-    require 'ltr'
-    local split = ltr.get_task("ricci.lakes.split")
+    require 'tlua'
+    local split = tlua.get_task("ricci.lakes.split")
 
 ## Installation
 
