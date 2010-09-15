@@ -51,6 +51,31 @@ Then, invoke the example:
     $ tlua string.match 'joe@example.com' '.*@(.*)'
     example.com
 
+## Commands
+
+To see what tasks you have available, use `tlua list`:
+
+    $ tlua list
+    System tasks:
+    -------------
+    help    Show this message
+    list    List all tasks
+
+    User tasks:
+    -----------
+    clean    Clean up project directory
+    docs     Run Luadoc for the Tlua project
+    test     Run tests
+
+## Potential Uses
+
+By adding tasks to files in your ~/.tlua directory, you can save useful code
+snippets from the Lua Users Wiki. This makes tlua sort of like Luarocks, but
+for functions rather than applications:
+
+    require 'ltr'
+    local split = ltr.get_task("ricci.lakes.split")
+
 ## Installation
 
 Install via Luarocks, or download and copy to the location you desire. At the
