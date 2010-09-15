@@ -56,7 +56,7 @@ Then, invoke the example:
 Install via Luarocks, or download and copy to the location you desire. At the
 moment, the best way to install via Luarocks is:
 
-    luarocks build http://github.com/norman/tlua/raw/master/tlua-scm1.rockspec
+    sudo luarocks build http://github.com/norman/tlua/raw/master/tlua-scm-1.rockspec
 
 ## Author
 
