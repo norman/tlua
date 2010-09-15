@@ -1,5 +1,4 @@
 require "tlua"
-require "pl"
 
 do
   print("Should add a task")

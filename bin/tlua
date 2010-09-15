@@ -1,5 +1,4 @@
 #!/usr/bin/env lua
-require 'pl'
 require 'tlua'
 require 'tlua.tasks'
 

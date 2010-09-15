@@ -1,3 +1,5 @@
+local tablex = require "pl.tablex"
+
 module("tlua.tasks", package.seeall)
 
 local function print_tasks(descs)

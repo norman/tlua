@@ -1,3 +1,6 @@
+local tablex = require "pl.tablex"
+local path   = require 'pl.path'
+
 --- Tlua is a simple task runner for Lua.
 module("tlua", package.seeall)
 
