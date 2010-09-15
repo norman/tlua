@@ -1,0 +1,7 @@
+#!/usr/bin/env lua
+require 'pl'
+require 'tlua'
+require 'tlua.tasks'
+
+tlua.load_files()
+tlua.invoke(arg[1] or "help")
