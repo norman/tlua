@@ -3,4 +3,4 @@ require 'tlua'
 require 'tlua.tasks'
 
 tlua.load_files()
-tlua.invoke(arg[1] or "help")
+tlua.invoke(arg[1] or tlua.default_task)

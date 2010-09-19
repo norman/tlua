@@ -10,6 +10,7 @@ _version            = "0.1.0"
 
 default_file_name   = "LuaTasks.lua"
 default_tasks_dir   = ".tlua"
+default_task        = "help"
 descriptions        = {}
 system_descriptions = {}
 local system_tasks  = {}
