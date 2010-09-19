@@ -1,7 +1,7 @@
 # Tlua
 
 Tlua is a task runner for Lua that simplifies running and reusing small bits of
-useful code. It lets you very easily build a command-line application for
+useful code. It lets you very easily build a command-line interface for
 running scripts in a project.
 
 It is in some ways conceptually similar to [Rake](http://rake.rubyforge.org/),
@@ -10,10 +10,10 @@ and doesn't require a special file format or DSL.
 
 ## A Sample
 
-Tlua looks for collections of tasks in a file named `LuaTasks.lua` in your
-current directory, and also in a directory named `.tlua` in your home
-directory.  The files in `~/.tlua` can be in any heirachy and have any name, as
-long as they have the extension `.lua`.
+Tlua looks for functions in a file named `LuaTasks.lua` in your current
+directory, and also in a directory named `.tlua` in your home directory. The
+files in `~/.tlua` can be in any heirachy and have any name, as long as they
+have the extension `.lua`.
 
 Here's an example `LuaTasks.lua` file:
 
@@ -35,9 +35,9 @@ You can then invoke this task on the command line:
     $ tlua say hello to:John
     hello John!
 
-Any function can be used as a task, as long as it does not require arguments.
-If you want to make a function that requires arguments into task, you can
-simply wrap it in a Tlua task that parses the parameters in the apropriate way:
+Any function can be used as a task, as long as it does not require arguments. If
+you want to make a function that requires arguments into task, you can simply
+wrap it in a Tlua task that parses the parameters in the apropriate way:
 
     local function test_match()
       local params = tlua.get_params()
