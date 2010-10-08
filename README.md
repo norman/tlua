@@ -8,12 +8,16 @@ It is in some ways conceptually similar to [Rake](http://rake.rubyforge.org/),
 but is oriented exclusively towards task running rather replacing Makefiles,
 and doesn't require a special file format or DSL.
 
-## A Sample
+## Usage
+
+### What it Does
 
 Tlua looks for functions in a file named `LuaTasks.lua` in your current
 directory, and also in a directory named `.tlua` in your home directory. The
 files in `~/.tlua` can be in any heirachy and have any name, as long as they
 have the extension `.lua`.
+
+### Sample Tasks File
 
 Here's an example `LuaTasks.lua` file:
 
@@ -35,6 +39,8 @@ You can then invoke this task on the command line:
     $ tlua say hello to:John
     hello John!
 
+### Creating Tasks
+
 Any function can be used as a task, as long as it does not require arguments. If
 you want to make a function that requires arguments into task, you can simply
 wrap it in a Tlua task that parses the parameters in the apropriate way:
@@ -50,6 +56,15 @@ Then, invoke the example:
 
     $ tlua string.match 'joe@example.com' '.*@(.*)'
     example.com
+    
+### Default Tasks
+
+You can also set a default task:
+
+    tlua.default_task = "my.new.default.task"
+
+Now when you invoke `tlua` with no arguments, your default task will be run
+rather than the help task.
 
 ## Commands
 
