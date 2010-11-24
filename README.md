@@ -6,7 +6,17 @@ running scripts in a project.
 
 It is in some ways conceptually similar to [Rake](http://rake.rubyforge.org/),
 but is oriented exclusively towards task running rather replacing Makefiles,
-and doesn't require a special file format or DSL.
+and doesn't require a special file format or DSL - it's just plain Lua.
+
+## Intended Use
+
+Use TLua to run project tasks such as:
+
+* Invoking tests
+* Archiving files for a rock
+* Generating Luadocs
+* Populating a database with sample data
+* etc.
 
 ## Usage
 
@@ -56,7 +66,7 @@ Then, invoke the example:
 
     $ tlua string.match 'joe@example.com' '.*@(.*)'
     example.com
-    
+
 ### Default Tasks
 
 You can also set a default task:
